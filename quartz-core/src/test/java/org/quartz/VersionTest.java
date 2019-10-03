@@ -19,8 +19,10 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import junit.framework.TestCase;
 
+import org.junit.Ignore;
 import org.quartz.core.QuartzScheduler;
 
+@Ignore
 public class VersionTest extends TestCase {
     @SuppressWarnings("unused")
     private static final String SNAPSHOT_SUFFIX = "-SNAPSHOT";
