@@ -195,7 +195,7 @@ public class XMLSchedulingDataProcessor implements ErrorHandler {
               return XMLConstants.NULL_NS_URI;
           }
         
-          public Iterator<?> getPrefixes(String namespaceURI)
+          public Iterator<String> getPrefixes(String namespaceURI)
           {
               // This method isn't necessary for XPath processing.
               throw new UnsupportedOperationException();
@@ -845,8 +845,7 @@ public class XMLSchedulingDataProcessor implements ErrorHandler {
 
     /**
      * Returns a <code>List</code> of jobs loaded from the xml file.
-     * <p/>
-     * 
+     *
      * @return a <code>List</code> of jobs.
      */
     protected List<JobDetail> getLoadedJobs() {
@@ -855,8 +854,7 @@ public class XMLSchedulingDataProcessor implements ErrorHandler {
     
     /**
      * Returns a <code>List</code> of triggers loaded from the xml file.
-     * <p/>
-     * 
+     *
      * @return a <code>List</code> of triggers.
      */
     protected List<MutableTrigger> getLoadedTriggers() {
