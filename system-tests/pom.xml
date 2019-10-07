@@ -122,33 +122,6 @@
 
   <profiles>
     <profile>
-      <id>java-9</id>
-      <activation>
-        <jdk>9</jdk>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <configuration>
-              <argLine>
-                --add-opens java.base/jdk.internal.loader=ALL-UNNAMED
-              </argLine>
-            </configuration>
-          </plugin>
-          <plugin>
-            <artifactId>maven-failsafe-plugin</artifactId>
-            <configuration>
-              <argLine>
-                --add-opens java.base/jdk.internal.loader=ALL-UNNAMED
-              </argLine>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-
-    <profile>
       <id>deploy-sonatype</id>
       <properties>
         <skipDeploy>true</skipDeploy>
